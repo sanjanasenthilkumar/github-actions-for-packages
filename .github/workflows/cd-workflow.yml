@@ -18,11 +18,8 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/owner/image
-      credentials:
-         username: ${{ github.actor }}
-         password: ${{ secrets.ghcr_token }}
+  
+      
  
 
     strategy:
@@ -33,6 +30,9 @@ jobs:
     # Specify the container in which actions will run
     container:
       image: codeql-container:f0f91db
+      credentials:
+         username: ${{ github.actor }}
+         password: ${{ secrets.ghcr_token }}
 
     steps:
     - name: Checkout repository
