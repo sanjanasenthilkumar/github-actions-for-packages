@@ -28,7 +28,7 @@ jobs:
 
     # Specify the container in which actions will run
     container:
-      image: codeql-container
+      image: sanjanasenthilkumar/github-actions-for-packages/tic-tac-toe
      
 
     steps:
