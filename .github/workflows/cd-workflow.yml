@@ -31,7 +31,7 @@ jobs:
       image: codeql-container:f0f91db
       credentials:
          username: ${{ github.actor }}
-         password: ${{ secrets.ghcr_token }}
+         password: ${{secrets.GITHUB_TOKEN}}
 
     steps:
     - name: Checkout repository
