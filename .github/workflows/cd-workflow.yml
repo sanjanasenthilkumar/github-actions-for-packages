@@ -21,9 +21,12 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      actions: read
+    container:
+      image: ghcr.io/owner/image
+      credentials:
+         username: ${{ github.actor }}
+         password: ${{ secrets.ghcr_token }}
+ 
 
     strategy:
       fail-fast: false
