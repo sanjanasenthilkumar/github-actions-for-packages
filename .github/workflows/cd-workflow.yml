@@ -24,6 +24,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        # Path to SARIF file relative to the root of the repository
+        sarif_file: https://github.com/sanjanasenthilkumar/github-actions-for-packages/results.sarif
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
