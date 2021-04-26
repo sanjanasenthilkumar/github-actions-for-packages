@@ -18,9 +18,7 @@ jobs:
     # Specify the container in which actions will run
     container:
       image: tic-tac-toe
-      credentials:
-        username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
+      
       
 
     steps:
