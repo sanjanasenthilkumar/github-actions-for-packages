@@ -17,7 +17,7 @@ jobs:
 
     # Specify the container in which actions will run
     container:
-      image: ghcr.io/sanjanasenthilkumar/github-actions-for-packages/tic-tac-toe:sha-8819984
+      image: ghcr.io/sanjanasenthilkumar/github-actions-for-packages/tic-tac-toe
       
       
 
