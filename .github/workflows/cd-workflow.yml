@@ -90,4 +90,4 @@ jobs:
         password: ${{secrets.GITHUB_TOKEN}}
         registry: ghcr.io
         repository: sanjanasenthilkumar/github-actions-for-packages/tic-tac-toe
-        tag_with_sha: true
+        tag_with_sha: false
